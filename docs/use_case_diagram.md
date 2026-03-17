@@ -5,8 +5,8 @@
 - Slice covered: <...>
 
 ## Actors (2–4)
-- A1: <role/system>
-- A2: <role/system>
+- A1: <AMSManager>
+- A2: <TransationLead>
 - A3: <optional>
 - A4: <optional>
 
