@@ -12,7 +12,7 @@
 - REQ-001 (Variant impact: No)
 - REQ-002 (Variant impact: No)
 - REQ-003 (Variant impact: No)
-- REQ-004 (Variant impact: Yes)
+- REQ-004 (Variant impact: No)
 - REQ-008 (Variant impact: Yes)
 - REQ-009 (Variant impact: Yes)
 
