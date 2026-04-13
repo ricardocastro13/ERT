@@ -45,6 +45,11 @@ Postconditions:
 - Type: FR
 - Priority: H
 - CSF: CSF-1
+- Preconditions:
+- candidatura criada
+
+Postconditions:
+- candidatura submetida
 - Acceptance Criteria:
   - sistema permite submissão
   - sistema confirma envio
