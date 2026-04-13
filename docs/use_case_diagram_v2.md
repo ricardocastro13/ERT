@@ -5,18 +5,18 @@
 - Slice covered: Intake & Discovery for beneficiary registration, validation and item allocation
 
 ## Actors (2–4)
-- A1: Beneficiary Manager
-- A2: Donor
-- A3: External Validation Service
-- A4: Administrator
+- A1: Gestor de Beneficiários
+- A2: Doador
+- A3: Sistema Externo de Validação
+- A4: Administrador
 
 ## Use cases (min. 6)
-- UC-01: Register beneficiary
-- UC-02: Validate beneficiary data
-- UC-03: Submit application
-- UC-04: Validate eligibility
-- UC-05: Assign donated items
-- UC-06: Consult beneficiary status
+- UC-01: Registar beneficiário
+- UC-02: Validar dados do beneficiário
+- UC-03: Submeter candidatura
+- UC-04: Validar elegibilidade
+- UC-05: Atribuir itens doados
+- UC-06: Consultar estado do beneficiário
 
 ## Notes on refinement
 - The diagram focuses only on the Intake & Discovery slice of AMS.
