@@ -8,7 +8,7 @@
 - Trigger: o utilizador seleciona a opção "criar beneficiário"
 - Pós-condições (sucesso): o beneficiário é guardado no sistema com identificador único
 - Pós-condições (falha/cancelamento): nenhum beneficiário é registado ou fica em rascunho
-- Requisitos relacionados: REQ-001, REQ-002, REQ-006
+- Requisitos relacionados: REQ-001, REQ-002
 
 ### Fluxo principal (happy path)
 1. O Gestor de Beneficiários inicia o registo.
