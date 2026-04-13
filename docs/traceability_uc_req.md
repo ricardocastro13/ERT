@@ -1,4 +1,5 @@
 ## Mapeamento (UC → REQ)
+
 | Caso de Uso | Requisitos Ligados (REQ-###) | Notas |
 |---|---|---|
 | UC-01 Registar beneficiário | REQ-001, REQ-002 | Registo e validação |
