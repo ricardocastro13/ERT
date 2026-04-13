@@ -28,6 +28,30 @@ E2. Dados inválidos → o sistema pede correção.
 
 ---
 
+## UC-03 — Submeter candidatura
+- Primary actor: Gestor de Beneficiários
+- Supporting actors: -
+- Goal: submeter candidatura no sistema
+- Preconditions: beneficiário registado
+- Trigger: o utilizador decide submeter candidatura
+- Postconditions (success): candidatura submetida com sucesso
+- Postconditions (failure/cancel): candidatura não é submetida
+- Related requirements: REQ-003
+
+### Main flow (happy path)
+1. O utilizador seleciona submeter candidatura.
+2. O sistema valida os dados do beneficiário.
+3. O utilizador confirma a submissão.
+4. O sistema regista a candidatura.
+
+### Alternative flows
+A1. O utilizador cancela a operação → o sistema não submete a candidatura.
+
+### Exceptions / errors
+E1. Dados inválidos → o sistema impede a submissão e apresenta erro.
+
+---
+
 ## UC-05 — Atribuir itens doados
 - Primary actor: Administrador
 - Supporting actors: Sistema Externo de Validação
@@ -36,7 +60,7 @@ E2. Dados inválidos → o sistema pede correção.
 - Trigger: o administrador seleciona um beneficiário
 - Postconditions (success): os itens são atribuídos
 - Postconditions (failure/cancel): nenhuma alteração é feita
-- Related requirements: REQ-004, REQ-007
+- Related requirements: REQ-004, REQ-008, REQ-009
 
 ### Main flow (happy path)
 1. O administrador consulta beneficiários.
