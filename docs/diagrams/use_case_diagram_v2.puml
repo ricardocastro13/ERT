@@ -2,7 +2,6 @@
 left to right direction
 
 actor "Gestor de Beneficiários" as GB
-actor "Doador" as D
 actor "Sistema Externo de Validação" as SEV
 actor "Administrador" as A
 
@@ -17,6 +16,7 @@ rectangle "AMS — Sistema de Gestão de Apoios" {
 }
 
 GB --> UC1
+GB --> UC2
 GB --> UC3
 GB --> UC6
 
@@ -24,7 +24,7 @@ SEV --> UC2
 SEV --> UC4
 
 A --> UC5
-D --> UC6
+A --> UC7
 
 UC1 ..> UC2 : <<include>>
 UC3 ..> UC4 : <<include>>
