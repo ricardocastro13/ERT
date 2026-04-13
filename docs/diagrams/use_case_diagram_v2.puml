@@ -1,0 +1,34 @@
+@startuml
+left to right direction
+
+actor "Gestor de Beneficiários" as GB
+actor "Doador" as D
+actor "Sistema Externo de Validação" as SEV
+actor "Administrador" as A
+
+rectangle "AMS — Sistema de Gestão de Apoios" {
+  usecase "UC-01 Registar beneficiário" as UC1
+  usecase "UC-02 Validar dados do beneficiário" as UC2
+  usecase "UC-03 Submeter candidatura" as UC3
+  usecase "UC-04 Validar elegibilidade" as UC4
+  usecase "UC-05 Atribuir itens doados" as UC5
+  usecase "UC-06 Consultar estado do beneficiário" as UC6
+  usecase "Registar ação (log)" as UC7
+}
+
+GB --> UC1
+GB --> UC3
+GB --> UC6
+
+SEV --> UC2
+SEV --> UC4
+
+A --> UC5
+D --> UC6
+
+UC1 ..> UC2 : <<include>>
+UC3 ..> UC4 : <<include>>
+UC5 ..> UC7 : <<include>>
+UC6 ..> UC7 : <<extend>>
+
+@enduml
