@@ -1,7 +1,1 @@
 # ERT
-
-o adm é que faz o 02 não o sistema externo
-
-
-
-numero de beneficiário da segurança social
