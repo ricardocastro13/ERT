@@ -8,37 +8,18 @@
 
 eu preciso que tu me fazes uma applicacao só codigo em java com os proximos requirement aue vou te mandar
 
+
+A Aplicaçao é uma aplicaçao de doaçao ela faz isso :
+
+REQ-001 — Registar beneficiário 
+REQ-002 — Validar dados do beneficiário 
+REQ-003 — Submeter candidatura 
+REQ-008 — Restringir acesso 
+REQ-009 — Registar ações !deve ser interativo com a consola
+
 **Generated output (what appeared):**
 Claro! Manda os requisitos e eu trato do código em Java. 👍
 
-**Kept (accepted):**
-- ...
-
-**Rejected (feature drift / out of scope):**
-- ...
-
-**Manual verification:**
-- Happy path:
-- Alternative flow:
-- Exception/error path:
-
-**Changes made after generation (manual edits):**
-- ...
-
----
-
-## Iteration 2 (with Claude.AI)
-**Prompt (summary or paste):**
-A Aplicaçao é uma aplicaçao de doaçao ela faz isso : 
-
-REQ-001 — Registar beneficiário
-REQ-002 — Validar dados do beneficiário
-REQ-003 — Submeter candidatura
-REQ-008 — Restringir acesso
-REQ-009 — Registar ações
-!deve ser interativo com a consola
-
-**Generated output:**
 Credenciais de teste:
 UtilizadorPasswordPerfiladminadmin123ADMINoperadoroper456OPERADOR
 
@@ -51,7 +32,7 @@ REQ-008 — Restringir acesso → Login obrigatório com 3 tentativas máx; as o
 REQ-009 — Registar ações → Todas as ações (login, logout, registo, aprovação, tentativas falhadas, acessos negados) ficam registadas com timestamp e utilizador
 
 
-Doacaoapp.java: 
+Doacaoapp.java:
 
 import java.util.*;
 import java.time.LocalDateTime;
@@ -61,7 +42,7 @@ import java.time.format.DateTimeFormatter;
 //  MODELO — Beneficiário
 // ============================================================
 class Beneficiario {
-    private static int contadorId = 1;
+private static int contadorId = 1;
 
     private int id;
     private String nome;
@@ -124,9 +105,9 @@ class Beneficiario {
 //  MODELO — Utilizador do sistema (REQ-008)
 // ============================================================
 class Utilizador {
-    private String username;
-    private String password;
-    private String perfil; // ADMIN | OPERADOR
+private String username;
+private String password;
+private String perfil; // ADMIN | OPERADOR
 
     public Utilizador(String username, String password, String perfil) {
         this.username = username;
@@ -143,7 +124,7 @@ class Utilizador {
 //  MODELO — Registo de Ação (REQ-009)
 // ============================================================
 class RegistoAcao {
-    private static int contadorLog = 1;
+private static int contadorLog = 1;
 
     private int id;
     private String utilizador;
@@ -554,6 +535,29 @@ public class DoacaoApp {
             .orElse(null);
     }
 }
+
+**Kept (accepted):**
+- ...
+
+**Rejected (feature drift / out of scope):**
+- ...
+
+**Manual verification:**
+- Happy path:
+- Alternative flow:
+- Exception/error path:
+
+**Changes made after generation (manual edits):**
+- ...
+
+---
+
+## Iteration 2 (with Claude.AI)
+**Prompt (summary or paste):**
+
+
+**Generated output:**
+
 **Kept:**
 - ...
 
