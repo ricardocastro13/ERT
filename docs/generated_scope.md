@@ -1,5 +1,5 @@
 
-# Generated Scope — Lab 8
+
 
 ## Selected slice
 - Slice: A
