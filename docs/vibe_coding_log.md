@@ -1419,9 +1419,10 @@ public class DoacaoApp2 {
 **Changes made after generation:**
 - ...
 
----
+----
 
 ## Notes (lessons learned)
 - What requirement ambiguity caused problems?
 - What constraints were missing initially?
 - What would you change in your requirements next?
+ 
